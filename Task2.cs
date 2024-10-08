@@ -340,6 +340,31 @@
 // ● თუ შესყიდვის საერთო თანხა არის $100 და $500 შორის, გამოიყენეთ 10%
 // ფასდაკლება.
 // ● თუ შესყიდვის საერთო თანხა $500-ზე მეტია, გამოიყენეთ 20% ფასდაკლება.
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         Console.WriteLine("Input Total AMT:");
+//         decimal total_amt = decimal.Parse(Console.ReadLine());
+//         decimal ten_percent = 0.1m;
+//         decimal twenty_percent = 0.2m;
+//         if (total_amt < 100)
+//         {
+//             Console.WriteLine($"AMT to pay: {total_amt}");
+//         }
+//         else if (total_amt >= 100 && total_amt <= 500)
+//         {
+//             total_amt = total_amt - (total_amt * ten_percent);
+//             Console.WriteLine($"AMT to pay: {total_amt}");
+//         }
+//         else if (total_amt > 500)
+//         {
+//             total_amt = total_amt - (total_amt * twenty_percent);
+//             Console.WriteLine($"AMT to pay: {total_amt}");
+//         }
+//     }
+// }
 // 11. ასაკობრივი და ქვეყნის შეზღუდვების მიხედვით პროდუქტის შეძენა
 // დაწერეთ პროგრამა, რომელიც ამოწმებს, შეუძლია თუ არა მომხმარებელს პროდუქტის შეძენა
 // ასაკის და ქვეყნის მიხედვით. პროდუქტის შეზღუდვები ასეთია:
@@ -347,6 +372,8 @@
 // ● სხვა ქვეყნებში, მომხმარებელი უნდა იყოს 18 წლის ან უფროსი. თუ
 // მომხმარებელი უფლებამოსილია შეძენისათვის, დაბეჭდეთ "შეძენა
 // ნებადართულია", წინააღმდეგ შემთხვევაში "შეძენა აკრძალულია".
+
+
 // 12. სესხის უფლებამოსილება
 // დაწერეთ პროგრამა, რომელიც განსაზღვრავს, არის თუ არა პირი სესხის მისაღებად
 // უფლებამოსილი. პირობებია:
