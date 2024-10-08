@@ -91,16 +91,29 @@
 // დადებითი, უარყოფითი, ან ნულოვანი.
 
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-         Console.WriteLine("Welcome to the Factorial Calculator!");
-         console.ReadLine("isa");
+// internal class Program
+// {
+//     private static void Main()
+//     {
+//         Console.Write("Type natural number here:");
 
-;
-    }
-}
+//         int number = int.Parse(Console.ReadLine());
+
+//         if (number == 0)
+//         {
+//             Console.WriteLine("The number is zero");
+//         }
+//         else if (number > 0)
+//         {
+//             Console.WriteLine("The number is positive");
+//         }
+//         else if (number < 0)
+//         {
+//             Console.WriteLine("The number is negative");
+//         }
+         
+//     }
+// }
 
 
 
