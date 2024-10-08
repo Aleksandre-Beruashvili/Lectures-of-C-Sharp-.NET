@@ -148,51 +148,90 @@
 // ● 60-69: D
 // ● 0-59: F
 
-internal class Program
-{
-    static string get_ctg_name(int score)
-    {
-        string ctg_name;
-         if (score >= 90)
-        {
-            ctg_name = "A";
-        }
-        else if (score >= 80)
-        {
-            ctg_name = "B";
-        }
-        else if (score >= 70)
-        {
-            ctg_name = "C";
-        }
-        else if (score >= 60)
-        {
-            ctg_name = "D";
-        }
-        else
-        {
-            ctg_name = "F";
-        }
-        return ctg_name;
-    }
+// internal class Program
+// {
+//     static string get_ctg_name(int score)
+//     {
+//         string ctg_name;
+//          if (score >= 90)
+//         {
+//             ctg_name = "A";
+//         }
+//         else if (score >= 80)
+//         {
+//             ctg_name = "B";
+//         }
+//         else if (score >= 70)
+//         {
+//             ctg_name = "C";
+//         }
+//         else if (score >= 60)
+//         {
+//             ctg_name = "D";
+//         }
+//         else
+//         {
+//             ctg_name = "F";
+//         }
+//         return ctg_name;
+//     }
     
-    public static void Main(string[] args)
-    {
-        Console.Write("Type score:");
-        int score = int.Parse(Console.ReadLine());
-        string category = get_ctg_name(score);
-        Console.WriteLine($"The category for the score is: {category}");
-    }
-}
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("Type score:");
+//         int score = int.Parse(Console.ReadLine());
+//         string category = get_ctg_name(score);
+//         Console.WriteLine($"The category for the score is: {category}");
+//     }
+// }
 
 // 4. ნაკიანი წლის შემოწმება
 // დაწერეთ პროგრამა, რომელიც ამოწმებს, არის თუ არა წელი ნაკიანი. წელი ნაკიანია თუ:
 // ● იყოფა 4-ზე, მაგრამ
 // ● არ იყოფა 100-ზე, თუ ის ასევე არ იყოფა 400-ზე.
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         Console.WriteLine("Type Year:");
+//         int year = int.Parse(Console.ReadLine());
+
+//         if (year % 4 == 0 && year % 100 != 0 && year % 400 != 0)
+//         {
+//             Console.WriteLine("It is 'Leap Year'");
+//         }
+//         else
+//         {
+//             Console.WriteLine("It is not 'Leap Year'");
+//         }
+
+//     }
+// }
 // 5. პაროლის შემოწმება
 // დაწერეთ პროგრამა, რომელიც იღებს მომხმარებლის შეყვანილ პაროლს და ამოწმებს,
 // ემთხვევა თუ არა ის წინასწარ განსაზღვრულ პაროლს (მაგალითად, "secret123"). თუ ემთხვევა,
 // დაბეჭდეთ "Access Granted", თუ არ ემთხვევა, დაბეჭდეთ "Access Forbidden".
+
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         Console.Write("Input pass:");
+//         string cons_pass = Console.ReadLine();
+//         if (cons_pass == "secret123")
+//         {
+//             Console.WriteLine("Access Granted");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Access Forbidden");
+//         }
+//     }
+// }
+
+
 // 6. სამი რიცხვიდან ყველაზე დიდის პოვნა
 // დაწერეთ პროგრამა, რომელიც იღებს სამ რიცხვს და ბეჭდავს მათგან ყველაზე დიდს.
 // 7. მარტივი კალკულატორი
