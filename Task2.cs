@@ -234,6 +234,35 @@
 
 // 6. სამი რიცხვიდან ყველაზე დიდის პოვნა
 // დაწერეთ პროგრამა, რომელიც იღებს სამ რიცხვს და ბეჭდავს მათგან ყველაზე დიდს.
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         Console.Write("Input three number. First:");
+//         int num1 = int.Parse(Console.ReadLine());
+
+//         Console.Write("Second:");
+//         int num2 = int.Parse(Console.ReadLine());
+
+//         Console.Write("Third:");
+//         int num3 = int.Parse(Console.ReadLine());
+
+//         if (num1 > num2 && num1 > num3)
+//         {
+//             Console.WriteLine(num1);
+//         }
+//         else if (num2 > num3)
+//         {
+//             Console.WriteLine(num2);
+//         }
+//         else 
+//         {
+//             Console.WriteLine(num3);
+//         }
+//     }
+// }
+
 // 7. მარტივი კალკულატორი
 // დაწერეთ პროგრამა, რომელიც მომხმარებლის შეყვანის საფუძველზე ასრულებს მარტივ
 // არითმეტიკულ ოპერაციებს (დამატება, გამოკლება, გამრავლება ან გაყოფა) ორ რიცხვზე.
