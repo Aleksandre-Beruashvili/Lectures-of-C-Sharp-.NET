@@ -121,6 +121,24 @@
 // 2. შემოწმება, რიცხვი ლუწია თუ კენტი
 // დაწერეთ პროგრამა, რომელიც იღებს მთელ რიცხვს და ამოწმებს, არის თუ არა ის ლუწი ან
 // კენტი.
+
+// internal class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("Type natural number here:");
+//         int number = int.Parse(Console.ReadLine());
+
+//         if (0 == number % 2)
+//         {
+//             Console.WriteLine("Number is even");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Number is odd");
+//         }
+//     }
+// }
 // 3. შეფასების კატეგორიზაცია
 // დაწერეთ პროგრამა, რომელიც იღებს სტუდენტის ქულას (0-დან 100-მდე) და ბეჭდავს
 // შესაბამის ნიშანს შემდეგი სკალის მიხედვით:
@@ -129,6 +147,44 @@
 // ● 70-79: C
 // ● 60-69: D
 // ● 0-59: F
+
+internal class Program
+{
+    static string get_ctg_name(int score)
+    {
+        string ctg_name;
+         if (score >= 90)
+        {
+            ctg_name = "A";
+        }
+        else if (score >= 80)
+        {
+            ctg_name = "B";
+        }
+        else if (score >= 70)
+        {
+            ctg_name = "C";
+        }
+        else if (score >= 60)
+        {
+            ctg_name = "D";
+        }
+        else
+        {
+            ctg_name = "F";
+        }
+        return ctg_name;
+    }
+    
+    public static void Main(string[] args)
+    {
+        Console.Write("Type score:");
+        int score = int.Parse(Console.ReadLine());
+        string category = get_ctg_name(score);
+        Console.WriteLine($"The category for the score is: {category}");
+    }
+}
+
 // 4. ნაკიანი წლის შემოწმება
 // დაწერეთ პროგრამა, რომელიც ამოწმებს, არის თუ არა წელი ნაკიანი. წელი ნაკიანია თუ:
 // ● იყოფა 4-ზე, მაგრამ
