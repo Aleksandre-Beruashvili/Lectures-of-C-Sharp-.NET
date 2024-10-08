@@ -297,6 +297,41 @@
 // ● საღამო (17:00 - 20:59) (Good Evening)
 // ● ღამე (21:00 - 4:59) (Good Night)
 
+// internal class Program
+// {
+//     public static void Main()
+//     {   
+        
+//         TimeSpan curr_date = DateTime.Now.TimeOfDay; //new TimeSpan(4, 0, 0); for check
+//         TimeSpan nine_pm = new TimeSpan(21, 0, 0);
+//         TimeSpan five_pm = new TimeSpan(17, 0, 0);
+//         TimeSpan twelve_am = new TimeSpan(12, 0, 0);
+//         TimeSpan five_am = new TimeSpan(5, 0, 0);
+//         TimeSpan twelve_pm = new TimeSpan(0, 0, 0);
+
+
+//         if (curr_date >= nine_pm || (curr_date >= twelve_pm && curr_date <= five_am))
+//         {
+//             Console.WriteLine("Good Night");
+//         }
+//         else if (curr_date >= five_pm)
+//         {
+//             Console.WriteLine("Good Evening");
+//         }
+//         else if (curr_date >= twelve_am)
+//         {
+//             Console.WriteLine("Good Afternoon");
+//         }
+//         else if (curr_date >= five_am)
+//         {
+//             Console.WriteLine("Good Morning");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Other");
+//         }
+//     }
+// }
 
 // 10. შოპინგის ფასდაკლების კალკულატორი
 // დაწერეთ პროგრამა, რომელიც ითვლის ჯამურ თანხას ფასდაკლების შემდეგ, შემდეგი
