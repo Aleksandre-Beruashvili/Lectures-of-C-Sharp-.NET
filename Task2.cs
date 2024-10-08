@@ -1,40 +1,4 @@
 ﻿
-// //calculator and ATM app
-
-// Console.Write("num1:");
-// double num1 = double.Parse(Console.ReadLine());
-
-// Console.Write("op:");
-// string op = Console.ReadLine();
-
-// Console.Write("num2:");
-// double num2 = double.Parse(Console.ReadLine());
-
-// double res = 0;
-
-// if (op == "+")
-// {
-//     res = num1 + num2;
-// }
-// else if (op == "-")
-// {
-//     res = num1-num2;
-
-// }
-// else if (op == "*")
-// {
-//     res = num1*num2;
-
-// }else if (op == "/")
-// {
-//     res = num1/num2;
-
-// }
-
-// Console.Write("Result:" + res);
-
-
-
 
 
 // //ATM ********************
@@ -266,9 +230,65 @@
 // 7. მარტივი კალკულატორი
 // დაწერეთ პროგრამა, რომელიც მომხმარებლის შეყვანის საფუძველზე ასრულებს მარტივ
 // არითმეტიკულ ოპერაციებს (დამატება, გამოკლება, გამრავლება ან გაყოფა) ორ რიცხვზე.
+
+
+
+// Console.Write("num1:");
+// double num1 = double.Parse(Console.ReadLine());
+
+// Console.Write("op:");
+// string op = Console.ReadLine();
+
+// Console.Write("num2:");
+// double num2 = double.Parse(Console.ReadLine());
+
+// double res = 0;
+
+// if (op == "+")
+// {
+//     res = num1 + num2;
+// }
+// else if (op == "-")
+// {
+//     res = num1-num2;
+
+// }
+// else if (op == "*")
+// {
+//     res = num1*num2;
+
+// }else if (op == "/")
+// {
+//     res = num1/num2;
+
+// }
+
+// Console.Write("Result:" + res);
+
+
+
 // 8. არჩევნების უფლებამოსილება
 // დაწერეთ პროგრამა, რომელიც ამოწმებს, არის თუ არა პირი არჩევნებში ხმის მიცემისთვის
 // უფლებამოსილი. პირი უნდა იყოს 18 წლის ან უფროსი.
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         Console.WriteLine("Input ur age:");
+//         int age = int.Parse(Console.ReadLine());
+//         if (age >= 18)
+//         {
+//             Console.WriteLine("Legal");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Not legal");
+//         }
+//     }
+// }
+
+
 // 9. დღის მისალმება საათის მიხედვით
 // დაწერეთ პროგრამა, რომელიც იღებს მიმდინარე დროს (საათების მიხედვით) და
 // განსაზღვრავს შესაფერის მისალმებას:
@@ -276,6 +296,8 @@
 // ● შუადღე (12:00 - 16:59) (Good Afternoon)
 // ● საღამო (17:00 - 20:59) (Good Evening)
 // ● ღამე (21:00 - 4:59) (Good Night)
+
+
 // 10. შოპინგის ფასდაკლების კალკულატორი
 // დაწერეთ პროგრამა, რომელიც ითვლის ჯამურ თანხას ფასდაკლების შემდეგ, შემდეგი
 // წესებით:
