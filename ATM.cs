@@ -1,7 +1,6 @@
 ﻿
 
 
-
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 decimal client_bal = 10000m;

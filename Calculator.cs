@@ -1,7 +1,5 @@
 ﻿
 
-
-
 Console.Write("num1:");
 double num1 = double.Parse(Console.ReadLine());
 
