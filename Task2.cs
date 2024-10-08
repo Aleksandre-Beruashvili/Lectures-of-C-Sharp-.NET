@@ -373,6 +373,30 @@
 // მომხმარებელი უფლებამოსილია შეძენისათვის, დაბეჭდეთ "შეძენა
 // ნებადართულია", წინააღმდეგ შემთხვევაში "შეძენა აკრძალულია".
 
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         Console.WriteLine($"Ur country: ");
+//         string country = Console.ReadLine();
+
+//         Console.WriteLine($"Ur age: ");
+//         int age = int.Parse(Console.ReadLine());
+
+//         if (country == "USA" && age >= 21)
+//         {
+//             Console.WriteLine("U can do this");
+//         }
+//         else if (country != "USA" && age >= 18)
+//         {
+//             Console.WriteLine("U can do this");
+//         }
+//         else
+//         {
+//             Console.WriteLine("U cannt");
+//         }
+//     }
+// }
 
 // 12. სესხის უფლებამოსილება
 // დაწერეთ პროგრამა, რომელიც განსაზღვრავს, არის თუ არა პირი სესხის მისაღებად
@@ -381,4 +405,28 @@
 // ● პირს უნდა ჰქონდეს მინიმუმ $25,000 წლიური შემოსავალი.
 // ● თუ პირს შემოსავალი ნაკლები აქვს $25,000-ზე, ის შეიძლება იყოს
 // უფლებამოსილი თანამონაწილის (თავდების) ყოლის შემთხვევაში.
-// If-else ამოცანები
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         Console.WriteLine("Ur age: ");
+//         int age = int.Parse(Console.ReadLine());
+
+//         Console.WriteLine("Ur Income: ");
+//         decimal Income = decimal.Parse(Console.ReadLine());
+
+//         if (age >= 18 && Income >= 25000m)
+//         {
+//             Console.WriteLine("U can do it");
+//         }
+//         else if (age >= 18 && Income < 25000m)
+//         {
+//             Console.WriteLine("U can do it with other person");
+//         }
+//         else
+//         {
+//             Console.WriteLine("U cannot do it");
+//         }
+//     }
+// }
