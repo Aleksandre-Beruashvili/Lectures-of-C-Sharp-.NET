@@ -46,19 +46,68 @@
 //             sum = sum+i;
 //             i++;
 //         }
-        
+
 //         Console.WriteLine(sum);
 //     }
 // }
 
 // 2. დაწერე პროგრამა, რომელიც While ციკლის გამოყენებით 5-ჯერ მოსთხოვს
 // მომხმარებელს შეიყვანოს რიცხვი და დაბეჭდავს ამ რიცხვების ჯამს.
+
+// using System.Globalization;
+
+// internal class Program
+// {
+//     public static void Main()
+//     {   
+//         int i = 0;
+//         int input_num;
+//         int sum = 0;
+
+//         while (i < 5)
+//         {
+//             i++;
+//             Console.Write($"Type Number {i}: ");
+//             input_num = int.Parse(Console.ReadLine());
+//             sum += input_num;
+
+//         }
+//         Console.WriteLine($"Sum of ur numbers: {sum}");
+//     }
+// }
+
 // სავარჯიშო 3: Do-While ციკლი
+
 // 1. დაწერე პროგრამა, რომელიც მომხმარებელს სთხოვს შეიყვანოს 10-ზე ნაკლები
 // რიცხვი და სანამ რიცხვი არ იქნება 10-ზე ნაკლები, ისევ მოითხოვს მონაცემის შეყვანას
 // (Do-While ციკლის გამოყენებით).
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         int input_num;
+
+//         do
+//         {
+//             Console.WriteLine("Type number less then 10: ");
+//             input_num = int.Parse(Console.ReadLine());  
+//         }
+
+//         while (input_num >= 10);
+//         {
+//             Console.WriteLine("good job!!");
+//         }
+        
+        
+//     }
+// }
+
 // 2. დაწერე პროგრამა, რომელიც 3-ჯერ დაუსვამს მომხმარებელს კითხვას "Do you want to
 // continue?" და თუ პასუხი იქნება "yes", პროგრამა გააგრძელებს ციკლს.
+
+
+
 // სავარჯიშო 4: ჩადგმული (Nested) ციკლები
 // დაწერე პროგრამა, რომელიც დაბეჭდავს ვარსკვლავების (*) სამკუთხედს შემდეგი ფორმით:
 // 􀋒
