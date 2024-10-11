@@ -199,6 +199,28 @@
 // ღირებულება.
 
 
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         string answer;
+//         int price;
+//         int total_price = 0;
+//         do
+//         {
+//             Console.WriteLine("Type price: ");
+//             price = int.Parse(Console.ReadLine());
+//             Console.WriteLine("Do you want to continue?");
+//             answer = Console.ReadLine();
+//             total_price = total_price + price;
+//         }
+//         while (answer == "yes" || answer == "y");
+        
+
+//         Console.WriteLine(total_price);
+//     }
+// }
+
 
 // სავარჯიშო 2: საშუალო ქულის გამოთვლა
 // დაწერე პროგრამა, რომელიც მოსწავლის ქულების შეყვანისას გამოთვლის საშუალო ქულას.
@@ -206,6 +228,41 @@
 // შემდეგ პროგრამამ უნდა ჰკითხოს სურს თუ არა გაგრძელება. თუ მომხმარებელი შეიყვანს
 // “yes” ან “y” პროგრამა უნდა გაგრძელდეს და მოითხოვოს მომდევნო ქულის შეყვანა. ბოლოს
 // პროგრამამ უნდა დაბეჭდოს საშუალო ქულა (შეყვანილი ქულების საშუალო არითმეტიკული).
+
+
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         string answer;
+//         int score;
+//         double total_score = 0;
+//         int cnt_score = 0;
+//         double value;
+//         do
+//         {
+//             Console.WriteLine("Type score: ");
+//             score = int.Parse(Console.ReadLine());
+//             Console.WriteLine("Do you want to continue?");
+//             answer = Console.ReadLine();
+//             total_score = total_score + score;
+//             cnt_score = cnt_score + 1;
+
+//         }
+//         while (answer == "yes" || answer == "y");
+        
+//         value = total_score/cnt_score;
+//         Console.WriteLine(total_score);
+//         Console.WriteLine(cnt_score);
+
+//         Console.WriteLine(value);
+        
+//     }
+// }
+
+
+
 // სავარჯიშო 3: საბანკო ანგარიშის ტრანზაქციები
 // დაწერე პროგრამა, რომელიც საბანკო ანგარიშის ტრანზაქციებს ამუშავებს. პროგრამა
 // მომხმარებელს სთხოვს შეიყვანოს ტრანზაქციის ტიპი (შემოსავალი ან ხარჯი) და თანხა.
