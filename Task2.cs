@@ -270,3 +270,55 @@
 // მომხმარებელი შეიყვანს “yes” ან “y” პროგრამა უნდა გაგრძელდეს და მოითხოვოს მომდევნო
 // ტრანზაქციის ტიპის და თანხის შეყვანა. საბოლოოდ პროგრამამ უნდა დაბეჭდოს ხარჯების
 // ჯამი, შემოსავლების ჯამი და ანგარიშის ბალანსი.
+
+
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         string type;
+//         decimal income = 0m;
+//         decimal expense = 0m;
+//         string continue_answer;
+//         bool ifcontinue;
+//         decimal income_sum = 0m;
+//         decimal expense_sum = 0m;
+//         decimal balance;
+
+//         do
+//         {
+//             Console.WriteLine("Is it income or expense? I/E");
+//             type = Console.ReadLine();
+//             if (type == "I")
+//             {
+//                 Console.WriteLine("Type ur income: ");
+//                 income = decimal.Parse(Console.ReadLine());
+//                 income_sum = income_sum + income;
+//             }
+//             else if (type == "E")
+//             {
+//                 Console.WriteLine("Type ur expense: ");
+//                 expense = decimal.Parse(Console.ReadLine());
+//                 expense_sum = expense_sum + expense;
+//             }
+            
+
+//             Console.WriteLine("Do u want to continue?");
+//             continue_answer = Console.ReadLine();
+//             if (continue_answer == "y" || continue_answer == "yes")
+//             {
+//                 ifcontinue = true;
+//             }
+//             else
+//             {
+//                 ifcontinue = false;
+//             }
+//         }
+//         while (ifcontinue);
+//         balance = income_sum - expense_sum;
+//         System.Console.WriteLine("ur Incomes: " + income_sum);
+//         System.Console.WriteLine("ur Expences: " + expense_sum);
+//         System.Console.WriteLine("ur Balance: " + balance);
+//     }
+// }
+
