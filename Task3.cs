@@ -20,7 +20,7 @@
 //     public decimal Salary {get; set;}
 //     public double WorkedHours {get; set;}
 
-    
+
 //     public Employee (string firstName, string lastName, int id, decimal salary, int workedHours)
 //     {
 //         FirstName = firstName;
@@ -29,13 +29,13 @@
 //         Salary = salary;
 //         WorkedHours = workedHours;
 //     }
-    
+
 // }
 
 // internal class Program
 // {
 
-    
+
 //     public static void Main()
 //     {
 //         List<Employee> employees = new List<Employee>();
@@ -78,7 +78,7 @@
 
 //             if (Overtime < 0)
 //             {
-                
+
 //                 Overtime = Math.Abs(Overtime);
 
 //                 System.Console.WriteLine("This Employe Has Overtime:");
@@ -87,8 +87,8 @@
 //                 Employee.WorkedHours = Employee.WorkedHours + Overtime;
 
 //                 System.Console.WriteLine("First Name:" + Employee.FirstName + " " + "Last Name:" + Employee.LastName + " " + "ID:" + Employee.ID + " " + "Salary:" + Employee.Salary);
-            
-                
+
+
 //             }
 //             else
 //             {
@@ -128,7 +128,7 @@
 //             Price = price;
 //             Quantity = quantity;
 //         }
-        
+
 //     }
 
 //     public static void Main()
@@ -161,3 +161,64 @@
 // ● პროგრამა უნდა ითვლიდეს გაყიდვების საერთო მოცულობას კვირის ბოლოს.
 
 
+
+// using System.Security.Cryptography.X509Certificates;
+
+// internal class Program
+// {
+//     public class Product
+//     {
+//         public string Name { get; set; }
+//         public decimal Price { get; set; }
+//         public int Quantity { get; set; }
+//         public DateTime SalesDate{ get; set; }
+
+//         public Product(string name, decimal price, int quantity, DateTime salesDate)
+//         {
+//             Name = name;
+//             Price = price;
+//             Quantity = quantity;
+//             SalesDate = salesDate;
+//         }
+        
+//     }
+
+//     public static void Main()
+//     {
+//         decimal TotalAmount = 0m;
+//         decimal TotalProductAmount = 0;
+        
+//         List<Product> products = new List<Product>();
+        
+//         products.Add(new Product("Pen", 2, 10, new DateTime(2024, 10, 14)));
+//         products.Add(new Product("Pineapple", 2, 1, new DateTime(2024, 10, 14)));
+//         products.Add(new Product("Pencil", 3, 5, new DateTime(2024, 10, 15)));
+
+
+
+//         decimal MondaySalesTotal = 0m;
+//         decimal TusedaySalesTotal = 0m;
+        
+//         foreach (Product product in products)
+//         {
+//             TotalProductAmount = product.Price*product.Quantity;
+
+//             if (product.SalesDate.DayOfWeek == DayOfWeek.Monday)
+//             {   
+//                 MondaySalesTotal += TotalProductAmount;
+
+//             }
+//             else if (product.SalesDate.DayOfWeek == DayOfWeek.Tuesday)
+//             {
+//                 TusedaySalesTotal += TotalProductAmount;
+//             }
+
+//         }
+        
+//         System.Console.WriteLine("Monday Sales:");
+//         Console.WriteLine("Total Amount: " + MondaySalesTotal);
+        
+//         System.Console.WriteLine("Tuesday Sales:");
+//         Console.WriteLine("Total Amount: " + TusedaySalesTotal);
+//     }
+// }
