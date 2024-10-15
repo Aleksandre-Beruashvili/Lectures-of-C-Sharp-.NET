@@ -11,41 +11,96 @@
 // გარდა ჯამური ხელფასისა პროგრამამ უნდა გამოიტანოს იმ თანამშრომლების სია რომლებმაც
 // ზეგანაკვეთურად იმუშავეს და მათთვის მისაცემი ანაზღაურება
 
-public class employee
-{
+// public class Employee
+// {
 
-    public string FirstName { get; set; };
-    public string SecondName { get; set;};
-    public int ID { get; set; };
-    public decimal Salary { get; set;};
+//     public string FirstName {get; set;}
+//     public string LastName {get; set;}
+//     public int ID {get; set;}
+//     public decimal Salary {get; set;}
+//     public double WorkedHours {get; set;}
+
     
-}
+//     public Employee (string firstName, string lastName, int id, decimal salary, int workedHours)
+//     {
+//         FirstName = firstName;
+//         LastName = lastName;
+//         ID = id;
+//         Salary = salary;
+//         WorkedHours = workedHours;
+//     }
+    
+// }
 
-internal class program
-{
+// internal class Program
+// {
+
+    
+//     public static void Main()
+//     {
+//         List<Employee> employees = new List<Employee>();
+//         string answer;
+//         do 
+//         {
+//             Console.WriteLine("Input Employee First Name:");
+//             string firstName = Console.ReadLine();
+
+//             Console.WriteLine("Input Employee Last Name:");
+//             string lastName = Console.ReadLine();
+
+//             Console.WriteLine("Input Employee ID:");
+//             int id = int.Parse(Console.ReadLine());
+
+//             Console.WriteLine("Input Employee Salary:");
+//             decimal salary = decimal.Parse(Console.ReadLine());
+
+//             Console.WriteLine("Input Worked Hours:");
+//             int workedHours = int.Parse(Console.ReadLine());
+
+//             employees.Add(new Employee(firstName, lastName, id, salary, workedHours));
+
+//             System.Console.WriteLine("Do u want to continue?");
+//             answer = Console.ReadLine();
+//         }
+//         while (answer.ToLower() == "y" || answer.ToLower() == "yes");
 
 
 
-    public static void main()
-    {
-        list<employee> employees = new List<employee>();
+//         const int NormalWorkingHours = 8;
+//         const decimal OvertimePercent = 1.25m;
+//         double Overtime;
+//         decimal TotalSalary = 0m;
 
-        employees.add(new employee { FirstName = "Aleksandre", SecondName = 'Beruashvili', ID = '13001069578', Salary = 8500})
-        employees.add(new employee { FirstName = "chichiko", SecondName = 'bendeliani', ID = '12312312312', Salary = 1500})
-        employees.add(new employee { FirstName = "bichiko", SecondName = 'uturi', ID = '78978912312', Salary = 500})
-        
-        decimal employee_salary = 0m;
-        int employee_worked_hours = 0;
-        const int normal_working_hours = 8;
-        const double overtime_percent = 1.25;
+//         foreach (var Employee in employees)
+//         {   
 
-        foreach (var employee in employees)
-        {
-            System.Console.WriteLine(employee);
-        }
+//             Overtime = NormalWorkingHours - Employee.WorkedHours;
 
-    }
-}
+//             if (Overtime < 0)
+//             {
+                
+//                 Overtime = Math.Abs(Overtime);
+
+//                 System.Console.WriteLine("This Employe Has Overtime:");
+
+//                 Employee.Salary = Employee.Salary * OvertimePercent;
+//                 Employee.WorkedHours = Employee.WorkedHours + Overtime;
+
+//                 System.Console.WriteLine("First Name:" + Employee.FirstName + " " + "Last Name:" + Employee.LastName + " " + "ID:" + Employee.ID + " " + "Salary:" + Employee.Salary);
+            
+                
+//             }
+//             else
+//             {
+//                 System.Console.WriteLine("This Employe Has Not Overtime:");
+//                 System.Console.WriteLine("First Name:" + Employee.FirstName + " " + "Last Name:" + Employee.LastName + " " + "ID:" + Employee.ID + " " + "Salary:" + Employee.Salary);
+//             }
+
+//             TotalSalary =+ Employee.Salary;
+//         }
+//         System.Console.WriteLine("Total salary: " + TotalSalary);
+//     }
+// }
 
 
 
