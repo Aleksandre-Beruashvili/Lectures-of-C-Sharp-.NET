@@ -111,10 +111,53 @@
 // ჩამონათვალს. პროდუქტს აქვს დასახელება, ფასი და რაოდენობა.
 // პროგრამამ უნდა დაიანგარიშოს თითოეული პროდუქტის ჯამური ღირებულება, და ასევე
 // პროდუქტების საერთო ღირებულება.
+
+
+
+// internal class Program
+// {
+//     public class Product
+//     {
+//         public string Name { get; set; }
+//         public decimal Price { get; set; }
+//         public int Quantity { get; set; }
+
+//         public Product(string name, decimal price, int quantity)
+//         {
+//             Name = name;
+//             Price = price;
+//             Quantity = quantity;
+//         }
+        
+//     }
+
+//     public static void Main()
+//     {
+//         decimal TotalAmount = 0m;
+//         decimal TotalProductAmount = 0;
+//         List<Product> products = new List<Product>();
+
+//         products.Add(new Product("Pen", 2, 10));
+//         products.Add(new Product("Pencil", 3, 5));
+
+//         foreach (Product product in products)
+//         {
+//             TotalProductAmount = product.Price*product.Quantity;
+//             System.Console.WriteLine("Product Name: " + product.Name + " " + "Total Product Amount: " + TotalProductAmount);
+//             TotalAmount += TotalProductAmount;
+//         }
+//         Console.WriteLine("Total Amount: " + TotalAmount);
+
+//     }
+// }
+
+
+
 // სავარჯიშო 3: პროდუქციის გაყიდვების მართვა
 // შენი კომპანია ყიდის პროდუქტებს. გვჭირდება პროგრამა რომელიც დაიანგარიშებს
 // გაყიდვების სტატისტიკას.
 // ● პროგრამა უნდა ითვლიდეს გაყიდვების ჯამურ ღირებულებას კვირის დღეების
 // მიხედვით
 // ● პროგრამა უნდა ითვლიდეს გაყიდვების საერთო მოცულობას კვირის ბოლოს.
-// 04. კოლექციები და კლ…
+
+
