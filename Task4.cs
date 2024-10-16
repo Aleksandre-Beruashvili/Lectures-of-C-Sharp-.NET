@@ -10,6 +10,41 @@
 // person.Name = "John";
 // person.Age = 25;
 // Console.WriteLine(person.DisplayInfo()); // უნდა დაბეჭდოს "Name: John, Age: 25"
+
+public class Person
+{
+    public string Name { get; set;}
+    public int Age { get; set;}
+
+
+    public string DisplayInfo()
+    {
+        if (Age < 0)
+        {
+            Age = 0;
+        }
+        else if (Age > 120)
+        {
+            Age = 120;
+        }
+        return $"Name: {Name}, Age: {Age}";
+    }
+}
+internal class Program
+{
+    public static void Main()
+    {
+        Person person= new Person();
+        person.Name = "john";
+        person.Age = 25;
+        System.Console.WriteLine(person.DisplayInfo());
+    }
+}
+
+
+
+
+
 // ამოცანა 2. კლასი "Car"
 // შექმენით კლასი სახელად Car, რომელსაც ექნება შემდეგი თვისებები:
 // ● Brand (ბრენდი) - სტრინგის ტიპი
