@@ -11,35 +11,35 @@
 // person.Age = 25;
 // Console.WriteLine(person.DisplayInfo()); // უნდა დაბეჭდოს "Name: John, Age: 25"
 
-public class Person
-{
-    public string Name { get; set;}
-    public int Age { get; set;}
+// public class Person
+// {
+//     public string Name { get; set;}
+//     public int Age { get; set;}
 
 
-    public string DisplayInfo()
-    {
-        if (Age < 0)
-        {
-            Age = 0;
-        }
-        else if (Age > 120)
-        {
-            Age = 120;
-        }
-        return $"Name: {Name}, Age: {Age}";
-    }
-}
-internal class Program
-{
-    public static void Main()
-    {
-        Person person= new Person();
-        person.Name = "john";
-        person.Age = 25;
-        System.Console.WriteLine(person.DisplayInfo());
-    }
-}
+//     public string DisplayInfo()
+//     {
+//         if (Age < 0)
+//         {
+//             Age = 0;
+//         }
+//         else if (Age > 120)
+//         {
+//             Age = 120;
+//         }
+//         return $"Name: {Name}, Age: {Age}";
+//     }
+// }
+// internal class Program
+// {
+//     public static void Main()
+//     {
+//         Person person= new Person();
+//         person.Name = "john";
+//         person.Age = 25;
+//         System.Console.WriteLine(person.DisplayInfo());
+//     }
+// }
 
 
 
@@ -53,6 +53,58 @@ internal class Program
 // წელზე მეტი (დაგჭირდებათ DateTime-ის გამოყენება)
 // თუ წელი 1886-ზე ნაკლებია წელი ავტომატურად უნდა გახდეს 1886, თუ მიმდინარე წელზე
 // მეტია უნდა გახდეს მიმდინარე წელი.
+
+
+
+// public class Car
+// {
+//     public string Brand { get; set; }
+//     private int _year;
+
+//     public int Year
+//     {
+//         get { return _year; }
+//         set{
+//             if (value < 1886)
+//             {
+//                 _year = 1886;
+//             }
+//             else if (value > DateTime.Now.Year)
+//             {
+//                 _year = DateTime.Now.Year;
+//             }
+//             else 
+//             {
+//                 _year = value;
+//             }
+//         }
+//     }
+
+//     public Car (string brand, int year)
+//     {
+//         Brand = brand;
+//         Year = year;
+//     }
+    
+//     public Car()
+//     {
+//         Brand = "NA"; 
+//         Year = 2000;
+//     }
+// }
+
+// internal class  Program
+// {
+//     public static void Main()
+//     {
+//         Car car = new Car();
+//         car.Brand = "Mercedes";
+//         car.Year = 1885;
+//         System.Console.WriteLine(car.Year);
+//     }
+// }
+
+
 // მოცანა 3: კლასი და ენამი
 // შექმენით ენამი Currency, რომელსაც ექნება შემდეგი მნიშვნელობები:
 // ● GEL
@@ -65,3 +117,5 @@ internal class Program
 // ● Currency (ვალუტა) - Currency ტიპი
 // ფასი არ უნდა იყოს უარყოფითი. უარყოფითი ფასის მინიჭების შემთხვევაში ფასი უნდა
 // გახდეს 0.
+
+
