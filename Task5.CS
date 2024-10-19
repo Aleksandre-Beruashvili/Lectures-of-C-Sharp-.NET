@@ -74,6 +74,94 @@
 // ● შექმენით Student და Teacher ობიექტები და გამოიყენეთ Describe() მეთოდი.
 
 
+// public class Person
+// {
+//     public string Name { get; set; }
+//     public int Age { get; set; }
+
+//     public virtual void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}" );
+//     }
+
+//     public virtual void Describe()
+//     {
+//         System.Console.WriteLine("I am a person.");
+//     }
+// }
+
+// public class Student : Person
+// {
+//     public int StudentId { get; set; }
+
+//     public override void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {StudentId}" );
+//     }
+
+//     public override void Describe()
+//     {
+//         System.Console.WriteLine("I am a student.");
+//     }
+// }
+
+// public class Teacher : Person
+// {
+//     public string Subject { get; set; }
+
+//     public override void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {Subject}" );
+//     }
+
+//         public override void Describe()
+//     {
+//         System.Console.WriteLine("I am a teacher.");
+//     }
+// }
+
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+
+//         Person person = new Person();
+//         person.Name = "John";
+//         person.Age = 40;
+
+//         Student student = new Student();
+//         student.StudentId = 55;
+//         student.Name = "Alex";
+//         student.Age = 25;
+
+//         Teacher teacher = new Teacher();
+//         teacher.Name = "Ms. Smith";
+//         teacher.Age = 35;
+//         teacher.Subject = "Mathematics";
+
+//         person.DisplayInfo(); 
+//         person.Describe();
+
+//         student.DisplayInfo(); 
+//         student.Describe();
+
+//         teacher.DisplayInfo();   
+//         teacher.Describe();
+       
+//     }
+// }
+
+
+
+// 3. საბაზისო კლასის კონსტრუქტორის გამოძახება
+// ● დაამატეთ კონსტრუქტორი Person კლასში, რომელიც იღებს პარამეტრებს name და
+// age.
+// ● Student და Teacher კლასებში გამოიყენეთ base რათა გამოიძახოთ
+// Person კონსტრუქტორი და გადასცეთ პარამეტრები.
+// ● შექმენით Student და Teacher ობიექტები და შეამოწმეთ საბაზისო კლასის
+// კონსტრუქტორის გამოძახება.
+
+
 public class Person
 {
     public string Name { get; set; }
@@ -152,14 +240,6 @@ public class Program
 }
 
 
-
-// 3. საბაზისო კლასის კონსტრუქტორის გამოძახება
-// ● დაამატეთ კონსტრუქტორი Person კლასში, რომელიც იღებს პარამეტრებს name და
-// age.
-// ● Student და Teacher კლასებში გამოიყენეთ base რათა გამოიძახოთ
-// Person კონსტრუქტორი და გადასცეთ პარამეტრები.
-// ● შექმენით Student და Teacher ობიექტები და შეამოწმეთ საბაზისო კლასის
-// კონსტრუქტორის გამოძახება.
 // 4. აბსტრაქტული კლასები და მეთოდები
 // ● Person კლასი გახადეთ აბსტრაქტული.
 // Inheritance Excercises
