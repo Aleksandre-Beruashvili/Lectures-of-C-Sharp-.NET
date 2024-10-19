@@ -108,7 +108,6 @@
 // მოცანა 3: კლასი და ენამი
 // შექმენით ენამი Currency, რომელსაც ექნება შემდეგი მნიშვნელობები:
 // ● GEL
-// 05. Class Properties
 // ● USD
 // ● EUR
 // შექმენით კლასი Product, რომელსაც ექნება შემდეგი თვისებები (Property):
@@ -118,4 +117,45 @@
 // ფასი არ უნდა იყოს უარყოფითი. უარყოფითი ფასის მინიჭების შემთხვევაში ფასი უნდა
 // გახდეს 0.
 
+// public enum Currency
+//     {
+//         GEL,
+//         USD,
+//         EUR
+//     }
+// public class Product
+// {
+//     public string Name { get; set;}
+//     private decimal _price;
+//     public decimal Price {
 
+//         get {return _price;}
+
+//         set {
+//             if (value < 0)
+//             {
+//                 _price = 0;
+//             }
+//             else
+//             {
+//                 _price = value;
+//             }
+
+//         }
+//     }
+//     public Currency Currency { get; set; }
+// }
+
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Product product = new Product();
+//         product.Name = "Mercedes";
+//         product.Price = -70_000m;
+//         product.Currency = Currency.USD;
+
+//         System.Console.WriteLine(product.Name + product.Price + product.Currency);
+        
+//     }
+// }
