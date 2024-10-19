@@ -9,45 +9,62 @@
 // Teacher ობიექტებიდან.
 
 
-public class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
-}
+// public class Person
+// {
+//     public string Name { get; set; }
+//     public int Age { get; set; }
 
-public class Student : Person
-{
-    public int StudentId { get; set; }
+//     public virtual void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}" );
+//     }
+// }
 
-    DisplayInfo()
-    {
-        System.Console.WriteLine(StudentId);
-    }
-}
+// public class Student : Person
+// {
+//     public int StudentId { get; set; }
 
-public class Teacher : Person
-{
-    public string Subject { get; set; }
+//     public override void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {StudentId}" );
+        
+//     }
+// }
 
-        DisplayInfo()
-    {
-        System.Console.WriteLine(Subject);
-    }
-}
+// public class Teacher : Person
+// {
+//     public string Subject { get; set; }
 
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        Student student = new Student();
-        student.StudentId = 55;
-        student.Name = "Alex";
-        student.Age = 25;
+//     public override void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {Subject}" );
+//     }
+// }
 
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
 
-        System.Console.WriteLine(student.StudentId + student.Name + student.Age);
-    }
-}
+//         Person person = new Person();
+//         person.Name = "John";
+//         person.Age = 40;
+
+//         Student student = new Student();
+//         student.StudentId = 55;
+//         student.Name = "Alex";
+//         student.Age = 25;
+
+//         Teacher teacher = new Teacher();
+//         teacher.Name = "Ms. Smith";
+//         teacher.Age = 35;
+//         teacher.Subject = "Mathematics";
+
+//         person.DisplayInfo();   
+//         student.DisplayInfo();   
+//         teacher.DisplayInfo();   
+//     }
+// }
 
 // 2. Method Overriding
 // ● Person კლასში შექმენით ვირტუალური მეთოდი Describe(), რომელიც ბეჭდავს
@@ -55,6 +72,87 @@ public class Program
 // ● Student და Teacher კლასებში დააოვერრაიდეთ Describe() მეთოდი, რათა
 // დაბეჭდოს "I am a student." და "I am a teacher." შესაბამისად.
 // ● შექმენით Student და Teacher ობიექტები და გამოიყენეთ Describe() მეთოდი.
+
+
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public virtual void DisplayInfo()
+    {
+        System.Console.WriteLine($"Name: {Name}, Age: {Age}" );
+    }
+
+    public virtual void Describe()
+    {
+        System.Console.WriteLine("I am a person.");
+    }
+}
+
+public class Student : Person
+{
+    public int StudentId { get; set; }
+
+    public override void DisplayInfo()
+    {
+        System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {StudentId}" );
+    }
+
+    public override void Describe()
+    {
+        System.Console.WriteLine("I am a student.");
+    }
+}
+
+public class Teacher : Person
+{
+    public string Subject { get; set; }
+
+    public override void DisplayInfo()
+    {
+        System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {Subject}" );
+    }
+
+        public override void Describe()
+    {
+        System.Console.WriteLine("I am a teacher.");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+
+        Person person = new Person();
+        person.Name = "John";
+        person.Age = 40;
+
+        Student student = new Student();
+        student.StudentId = 55;
+        student.Name = "Alex";
+        student.Age = 25;
+
+        Teacher teacher = new Teacher();
+        teacher.Name = "Ms. Smith";
+        teacher.Age = 35;
+        teacher.Subject = "Mathematics";
+
+        person.DisplayInfo(); 
+        person.Describe();
+
+        student.DisplayInfo(); 
+        student.Describe();
+
+        teacher.DisplayInfo();   
+        teacher.Describe();
+       
+    }
+}
+
+
+
 // 3. საბაზისო კლასის კონსტრუქტორის გამოძახება
 // ● დაამატეთ კონსტრუქტორი Person კლასში, რომელიც იღებს პარამეტრებს name და
 // age.
