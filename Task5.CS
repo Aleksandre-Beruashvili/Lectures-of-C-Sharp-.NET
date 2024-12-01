@@ -162,82 +162,101 @@
 // კონსტრუქტორის გამოძახება.
 
 
-public class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
+// public class Person
+// {
+//     public string Name { get; set; }
+//     public int Age { get; set; }
 
-    public virtual void DisplayInfo()
-    {
-        System.Console.WriteLine($"Name: {Name}, Age: {Age}" );
-    }
+//     public virtual void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}" );
+//     }
 
-    public virtual void Describe()
-    {
-        System.Console.WriteLine("I am a person.");
-    }
-}
+//     public virtual void Describe()
+//     {
+//         System.Console.WriteLine("I am a person.");
+//     }
 
-public class Student : Person
-{
-    public int StudentId { get; set; }
+//     public Person(string name, int age)
+//     {
+//         Name = name;
+//         Age = age;
+//     }
+// }
 
-    public override void DisplayInfo()
-    {
-        System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {StudentId}" );
-    }
+// public class Student : Person
+// {
+//     public int StudentId { get; set; }
 
-    public override void Describe()
-    {
-        System.Console.WriteLine("I am a student.");
-    }
-}
+//     public override void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {StudentId}" );
+//     }
 
-public class Teacher : Person
-{
-    public string Subject { get; set; }
+//     public override void Describe()
+//     {
+//         System.Console.WriteLine("I am a student.");
+//     }
 
-    public override void DisplayInfo()
-    {
-        System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {Subject}" );
-    }
+//     public Student(string name, int age, int studentId) : base(name, age)
+//     {
+//         StudentId = studentId;
+//     }
+// }
 
-        public override void Describe()
-    {
-        System.Console.WriteLine("I am a teacher.");
-    }
-}
+// public class Teacher : Person
+// {
+//     public string Subject { get; set; }
 
-public class Program
-{
-    public static void Main(string[] args)
-    {
+//     public override void DisplayInfo()
+//     {
+//         System.Console.WriteLine($"Name: {Name}, Age: {Age}, StudentId: {Subject}" );
+//     }
 
-        Person person = new Person();
-        person.Name = "John";
-        person.Age = 40;
+//         public override void Describe()
+//     {
+//         System.Console.WriteLine("I am a teacher.");
+//     }
 
-        Student student = new Student();
-        student.StudentId = 55;
-        student.Name = "Alex";
-        student.Age = 25;
+//     public Teacher(string name, int age, string subject) : base(name, age)
+//     {
+//         Subject = subject;
+//     }
+    
+// }
 
-        Teacher teacher = new Teacher();
-        teacher.Name = "Ms. Smith";
-        teacher.Age = 35;
-        teacher.Subject = "Mathematics";
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
 
-        person.DisplayInfo(); 
-        person.Describe();
+//         Person person = new Person();
+//         person.Name = "John";
+//         person.Age = 40;
 
-        student.DisplayInfo(); 
-        student.Describe();
+//         Student student = new Student();
+//         student.StudentId = 55;
+//         student.Name = "Alex";
+//         student.Age = 25;
 
-        teacher.DisplayInfo();   
-        teacher.Describe();
+//         Teacher teacher = new Teacher();
+//         teacher.Name = "Ms. Smith";
+//         teacher.Age = 35;
+//         teacher.Subject = "Mathematics";
+
+//         person.DisplayInfo(); 
+//         person.Describe();
+
+//         student.DisplayInfo(); 
+//         student.Describe();
+
+//         teacher.DisplayInfo();   
+//         teacher.Describe();
+
+        
        
-    }
-}
+//     }
+// }
 //
 
 // 4. აბსტრაქტული კლასები და მეთოდები
@@ -250,6 +269,8 @@ public class Program
 // Student ტიპის ობიექტებისთვის და "Teacher" Teacher ტიპის ობიექტებისთვის.
 // ● გამოიძახეთ ეს მეთოდი და დაბეჭდეთ მისი დაბრუნებული მნიშნვლება Student და
 // Teacher კლასების ობიექტებიდან.
+
+
 // 5. თამაშის სიმულაციის მაგალითი
 // შექმენით თამაშის, რომელიც მოიცავს იარაღებსა და პერსონაჟებს. შეასრულეთ შემდეგი
 // ნაბიჯები:
